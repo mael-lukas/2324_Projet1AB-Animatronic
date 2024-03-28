@@ -1082,102 +1082,6 @@
 				)
 			)
 		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:PWR_FLAG"
 			(power)
 			(pin_numbers hide)
@@ -1282,6 +1186,12 @@
 		(uuid "40d35379-a99c-4018-b1b0-740e3adcc1e5")
 	)
 	(junction
+		(at 59.69 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "804d6d7c-dee1-4784-ac0f-dc8ace9d412b")
+	)
+	(junction
 		(at 173.99 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1298,12 +1208,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca8bac89-b052-4b86-b900-a62a7cd376c8")
-	)
-	(junction
-		(at 59.69 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e5ff526f-11ce-4964-9260-74bf06441af8")
 	)
 	(wire
 		(pts
@@ -1344,16 +1248,6 @@
 			(type default)
 		)
 		(uuid "259e16a1-18ef-4676-8b49-d9734624d954")
-	)
-	(wire
-		(pts
-			(xy 59.69 100.33) (xy 59.69 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37473ba6-6a06-4eff-b6b7-99ebb0d27c63")
 	)
 	(wire
 		(pts
@@ -1576,17 +1470,17 @@
 		(uuid "f3089a08-1a32-4cc2-ada4-2874dfe43c4a")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 59.69 101.6 0)
+		(lib_id "power:+5V")
+		(at 59.69 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "07127a8f-d882-4116-a5e0-d25299b3e668")
-		(property "Reference" "#PWR03"
-			(at 59.69 107.95 0)
+		(uuid "0a2da636-693b-475d-a953-d9436d29af96")
+		(property "Reference" "#PWR02"
+			(at 59.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1594,8 +1488,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 59.69 106.68 0)
+		(property "Value" "+5V"
+			(at 59.69 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1603,7 +1497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 101.6 0)
+			(at 59.69 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,7 +1506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 101.6 0)
+			(at 59.69 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1620,8 +1514,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 101.6 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 59.69 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,12 +1524,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2c96f35d-37f2-439b-9215-f02f3664cf66")
+			(uuid "4c2e8b9c-8555-49b0-8266-26e41c032920")
 		)
 		(instances
 			(project "PCB LED"
 				(path "/b7ca7cdf-dc92-45df-be19-180decc010f7"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -1667,7 +1561,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 163.83 77.978 90)
 			(effects
 				(font
@@ -1735,7 +1629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 163.83 83.058 90)
 			(effects
 				(font
@@ -1870,7 +1764,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 163.83 72.898 90)
 			(effects
 				(font
