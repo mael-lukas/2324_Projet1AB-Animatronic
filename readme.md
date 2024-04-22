@@ -1,7 +1,8 @@
 # DEA : Dynamic Eagle Animatronic
 > Présentation du projet, cahier des charges, état de l'art, etc...
-Et on va essayer de faire un animatronique, un oiseau mecanique. (Vous n'allez pas essayer, vous allez faire !)
-Et ce dans le cadre du projet de première année de MR. Papazoglou
+Dans le cadre d'un projet de 1ère année à l'école d'ingénieur ENSEA supervisé par (@)M.Papazoglou nous allons créer créer un animatronic d'aigle en 40h. Cet animatronic sera
+capable d'ouvrir et de rabattre ses ailes, d'ouvrir et de fermer ses paupières, d'ouvrir et de fermer son bec, de pivoter sa tête (optionnel). Ces mouvements seront commandés par
+> l'appui de différents boutons.
 
 
 # Equipe
