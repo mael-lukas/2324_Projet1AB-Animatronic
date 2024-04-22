@@ -1,4 +1,4 @@
-# Animatronic (Trouvez un nom qui parle et vendeur)
+# DEA : Dynamic Eagle Animatronic
 > Présentation du projet, cahier des charges, état de l'art, etc...
 Et on va essayer de faire un animatronique, un oiseau mecanique. (Vous n'allez pas essayer, vous allez faire !)
 Et ce dans le cadre du projet de première année de MR. Papazoglou
