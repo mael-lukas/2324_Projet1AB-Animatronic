@@ -9,10 +9,20 @@ l'appui de différents boutons.
 # Equipe
 Membre de l'équipe : 
 * Vincent Fernandes
+    * profil Github : https://github.com/FernandesVincent
+    * profil Linkedin : https://www.linkedin.com/in/vincent-fernandes-0981552a6/
 * Maël Lukas
+    * profil Github : https://github.com/mael-lukas
+    * profil Linkedin : https://www.linkedin.com/in/mael-lukas/
 * Romane Ponthieu
+    * profil Github : https://github.com/Romanepnth
+    * profil Linkedin : https://www.linkedin.com/in/romane-ponthieu/
 * Marie Ceccaldi
+    * profil Github : https://github.com/mariececcaldi1
+    * profil Linkedin : https://www.linkedin.com/in/marie-ceccaldi-887616300/
 * Sedrenn Labrousse
+    * profil Github : https://github.com/Sedrennl
+    * profil Linkedin : https://www.linkedin.com/in/sédrenn-labrousse-24b2a5295/
 > Rajouter les liens vers vos linked in, github, etc...
 
 # Journal de bord
