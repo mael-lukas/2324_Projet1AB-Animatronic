@@ -44,7 +44,7 @@ Membre de l'équipe :
 ## Séance 2
    Durant cette séance nous avons affiné notre cahier des charges et notre diagramme d'architecture disponible ci-dessous:
 
-   Nous en avons déduis la nécessité d'avoir un minimum de 2 PCB afin de réaliser notre animatronique, le principal qui contiendrait le microprocesseur ainsi que différents connectiques tandis que le secondaire incorporerai principalement en son sein tout les régulateurs de tension nécessaire à l'actionnment des moteurs. [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/edit/main/readme.md#pcb)
+   Nous en avons déduis la nécessité d'avoir un minimum de 2 PCB afin de réaliser notre animatronique, le principal qui contiendrait le microprocesseur ainsi que différents connectiques tandis que le secondaire incorporerai principalement en son sein tout les régulateurs de tension nécessaire à l'actionnment des moteurs. [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#pcb)
    Pendant ce temps, Sedrenn et Maël se sont chargés de la commande des différents composants dont nous ne disposions pas à l'école.
    
 ## Séance 3
