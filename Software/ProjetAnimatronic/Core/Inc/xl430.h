@@ -137,7 +137,7 @@ typedef struct __XL320_HandleTypeDef
 	uint16_t pwm_limit;						// 885		0		885
 	uint32_t velocity_limit;				// 265		0		1023
 	uint32_t max_pos_limit;					// 4095		0		4095
-	uint32_t min_pox_limit;					// 0		0		4095
+	uint32_t min_pos_limit;					// 0		0		4095
 	uint8_t startup_configuration;			// 0		0		3
 	uint8_t shutdown_error_information;		// 52
 	uint8_t torque_enable;					// 0		0		1
