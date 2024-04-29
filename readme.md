@@ -8,6 +8,14 @@ Dans le cadre d'un projet de 1ère année à l'école d'ingénieur ENSEA supervi
 capable d'ouvrir et de rabattre ses ailes, d'ouvrir et de fermer ses paupières, d'ouvrir et de fermer son bec, de pivoter sa tête (optionnel). Ces mouvements seront commandés par
 l'appui de différents boutons.
 
+<table>
+  <tr>
+    <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="300" height="500"></td>
+    <td><img src="image2.jpg" alt="Image 2"></td>
+  </tr>
+</table>
+
+<!-- ![Cahier des charges](GestionProjet/Cahier_des_charges.png) -->
 # Equipe
 Membre de l'équipe : 
 * Vincent Fernandes
