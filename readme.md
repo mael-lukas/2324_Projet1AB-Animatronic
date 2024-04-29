@@ -7,7 +7,12 @@ Elles sont depuis plusieurs décennies et encore aujourd'hui principalement util
 Dans le cadre d'un projet de 1ère année à l'école d'ingénieur ENSEA supervisé par (@)M.Papazoglou nous allons créer créer une animatronique d'aigle en 10 séances de 4h. Cet animatronic sera
 capable d'ouvrir et de rabattre ses ailes, d'ouvrir et de fermer ses paupières, d'ouvrir et de fermer son bec, de pivoter sa tête (optionnel). Ces mouvements seront commandés par
 l'appui de différents boutons.
-
+<!--
+<div style="display: flex;">
+  <img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" style="flex: 50%;">
+  <img src="GestionProjet/diagramme d'architecture animatronic.pdf" alt="diagramme d'architecture animatronic.pdf" style="flex: 50%;">
+</div>
+-->
 <table>
   <tr>
     <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="300" height="500"></td>
@@ -15,7 +20,7 @@ l'appui de différents boutons.
   </tr>
 </table>
 
-<!-- ![Cahier des charges](GestionProjet/Cahier_des_charges.png) -->
+<!-- ![Cahier des charges](GestionProjet/Cahier_des_charges.png) --> 
 # Equipe
 Membre de l'équipe : 
 * Vincent Fernandes
