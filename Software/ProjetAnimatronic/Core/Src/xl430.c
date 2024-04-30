@@ -48,31 +48,31 @@ const uint8_t msg_ping_correct[]="Ping request successful\r\n";
 const uint8_t msg_ping_error[]="No response from ping request\r\n";
 const uint8_t msg_ping_crc_error[]="Incorrect CRC in ping answer\r\n";
 
-void XL430_Init(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, GPIO_TypeDef *TxEnPort, uint16_t TxEnPin, uint8_t id, uint8_t  baudrate){
+// passer en wheel mode pcq on tourne plus que 1 tour
+
+void XL430_Init(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, uint8_t id, uint8_t  baudrate){
 	XL430_Handle->huart = huart;
-	XL430_Handle->tx_En_Port = TxEnPort;
-	XL430_Handle->tx_En_Pin = TxEnPin;
 	XL430_Handle->id = id;
 	XL430_Handle->baudrate = baudrate;
 	XL430_Handle->operating_mode = 3;
 	XL430_Handle->drive_mode = 0;
 	XL430_Handle->max_pos_limit = 4095;
 	XL430_Handle->min_pos_limit = 0;
+	XL430_Handle->velocity_limit = 1023;
 	// Set in RX mode
 	XL430_Set_UART_RxTxMode(XL430_Handle, XL430_UART_RX);
 }
 
-void XL430_Init_debug(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, UART_HandleTYpeDef *huart_debug, GPIO_TypeDef *TxEnPort, uint16_t TxEnPin, uint8_t id, uint8_t baudrate){
+void XL430_Init_debug(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, UART_HandleTypeDef *huart_debug, uint8_t id, uint8_t baudrate){
 	XL430_Handle->huart = huart;
 	XL430_Handle->huart_debug = huart_debug;
-	XL430_Handle->tx_En_Port = TxEnPort;
-	XL430_Handle->tx_En_Pin = TxEnPin;
 	XL430_Handle->id = id;
 	XL430_Handle->baudrate = baudrate;
 	XL430_Handle->operating_mode = 3;
 	XL430_Handle->drive_mode = 0;
 	XL430_Handle->max_pos_limit = 4095;
 	XL430_Handle->min_pos_limit = 0;
+	XL430_Handle->velocity_limit = 1023;
 	// Set in RX mode
 	XL430_Set_UART_RxTxMode(XL430_Handle, XL430_UART_RX);
 }
@@ -92,4 +92,140 @@ HAL_StatusTypeDef XL430_Ping(__XL430_HandleTypeDef *XL430_Handle){
 	XL430_Handle->tx_buffer[7] = XL430_INST_PING;
 
 	XL430_Handle->tx_data_length = 8;
+
+	// CRC
+	XL430_Update_CRC(XL430_Handle);
+	XL430_Handle->tx_buffer[8] = (XL430_Handle->crc) & 0x00FF;
+	XL430_Handle->tx_buffer[9] = (XL430_Handle->crc >> 8) & 0x00FF;
+
+	XL430_Set_UART_RxTxMode(XL430_Handle, XL430_UART_TX);
+	HAL_UART_Transmit(XL430_Handle->huart, XL430_Handle->tx_buffer,  XL430_Handle->tx_data_length + XL430_CRC_LENGTH, 10);
+	XL430_Set_UART_RxTxMode(XL430_Handle, XL430_UART_RX);
+
+	if(HAL_ERROR == HAL_UART_Receive(XL430_Handle->huart, XL430_Handle->rx_buffer, 14, 10)){
+		HAL_UART_Transmit(XL430_Handle->huart_debug, msg_ping_error, sizeof(msg_ping_error), 10);
+		return HAL_ERROR;
+	}
+
+	XL430_Handle->rx_data_length = XL430_Handle->rx_buffer[5]+(XL430_Handle->rx_buffer[6] << 8);
+
+	if(XL430_Check_CRC(XL430_Handle) == HAL_ERROR){
+		HAL_UART_Transmit(XL430_Handle->huart_debug, msg_ping_crc_error, sizeof(msg_ping_crc_error), 10);
+		return HAL_ERROR;
+	}
+	HAL_UART_Transmit(XL430_Handle->huart_debug, msg_ping_correct, sizeof(msg_ping_correct), 10);
+
+	XL430_Handle->error_code = XL430_Handle->rx_buffer[8]; // ERR Code
+	XL430_Handle->model_number = XL430_Handle->rx_buffer[9] + (XL430_Handle->rx_buffer[10]<<8);
+	XL430_Handle->firmware_version = XL430_Handle->rx_buffer[11];
+
+	XL430_Handle->tx_data_debug_length = snprintf(XL430_Handle->tx_buffer_debug, MAX_BUFFER_DEBUG_LENGTH,
+				"Model number :     %6d \r\n"
+				"Firmware version : %6d \r\n"
+				"Error code :       %6d \r\n"
+				"ID :               %6d \r\n",
+				XL430_Handle->model_number, XL430_Handle->firmware_version, XL430_Handle->error_code, XL430_Handle->id);
+	HAL_UART_Transmit(XL430_Handle->huart_debug, XL430_Handle->tx_buffer_debug, XL430_Handle->tx_data_debug_length, 10);
+
+	return HAL_OK;
+}
+
+void XL430_Set_UART_RxTxMode(__XL430_HandleTypeDef *XL430_Handle, int mode){
+	if(mode==0){
+		HAL_StatusTypeDef status = HAL_HalfDuplex_EnableReceiver(XL430_Handle->huart);
+	}
+	if(mode==1){
+		HAL_StatusTypeDef status = HAL_HalfDuplex_EnableTransmitter(XL430_Handle->huart);
+	}
+}
+
+void XL430_Write_Data(__XL430_HandleTypeDef *XL430_Handle, uint16_t Address, uint16_t Value){
+	// Header + reserved
+	XL430_Handle->tx_buffer[0] = XL430_HEADER_1;
+	XL430_Handle->tx_buffer[1] = XL430_HEADER_2;
+	XL430_Handle->tx_buffer[2] = XL430_HEADER_3;
+	XL430_Handle->tx_buffer[3] = XL430_RSVD;
+	// ID
+	XL430_Handle->tx_buffer[4] = XL430_Handle->id;
+	// Length (Nb param + Instru + CRC)
+	XL430_Handle->tx_buffer[5] = 0x07;   // Length (Low)
+	XL430_Handle->tx_buffer[6] = 0x00;   // Length (High)
+	// Instruction : write
+	XL430_Handle->tx_buffer[7] = XL430_INST_WRITE_DATA;
+	// Register Address
+	XL430_Handle->tx_buffer[8] = Address & 0x00FF;			// Addr (Low)
+	XL430_Handle->tx_buffer[9] = (Address >> 8) & 0x00FF;	// Addr (High)
+	// Register Value
+	XL430_Handle->tx_buffer[10] = Value & 0x00FF;			// Val (Low)
+	XL430_Handle->tx_buffer[11] = (Value >> 8) & 0x00FF;	// Val (High)
+
+	XL430_Handle->tx_data_length = 12;
+
+	// CRC
+	XL430_Update_CRC(XL430_Handle);
+	XL430_Handle->tx_buffer[12] = (XL430_Handle->crc) & 0x00FF;
+	XL430_Handle->tx_buffer[13] = (XL430_Handle->crc >> 8) & 0x00FF;
+
+	XL430_Set_UART_RxTxMode(XL430_Handle, XL430_UART_TX);
+	HAL_UART_Transmit(XL430_Handle->huart, XL430_Handle->tx_buffer, XL430_Handle->tx_data_length + XL430_CRC_LENGTH, 10);
+	XL430_Set_UART_RxTxMode(XL430_Handle, XL430_UART_RX);
+}
+
+void XL430_Set_Position(__XL430_HandleTypeDef *XL430_Handle, uint16_t position){ //
+	position = (position < XL430_Handle->max_pos_limit)?position:XL430_Handle->max_pos_limit;
+	position = (position > XL430_Handle->min_pos_limit)?position:XL430_Handle->min_pos_limit;
+	XL430_Write_Data(XL430_Handle, XL430_REG_GOAL_POS, position);
+}
+
+void XL430_Set_Speed(__XL430_HandleTypeDef *XL430_Handle, uint16_t speed){ //vérifier qu'on est en wheel mode avant de changer la vitesse
+	speed = (speed < XL430_Handle->velocity_limit)?speed:XL430_Handle->velocity_limit;
+	speed = (speed > (-1*XL430_Handle->velocity_limit))?speed:(-1*XL430_Handle->velocity_limit);
+	XL430_Write_Data(XL430_Handle, XL430_REG_GOAL_VELOCITY, speed);
+}
+
+void XL430_Set_Operating_Mode(__XL430_HandleTypeDef *XL430_Handle, uint16_t operating_mode){
+	if(operating_mode == XL430_VELOCITY_CONTROL_MODE) XL430_Write_Data(XL430_Handle, XL430_REG_OPERATING_MODE, XL430_VELOCITY_CONTROL_MODE);
+	if(operating_mode == XL430_POS_CONTROL_MODE) XL430_Write_Data(XL430_Handle, XL430_REG_OPERATING_MODE, XL430_POS_CONTROL_MODE);
+	if(operating_mode == XL430_EXTENDED_POS_CONTROL_MODE) XL430_Write_Data(XL430_Handle, XL430_REG_OPERATING_MODE, XL430_EXTENDED_POS_CONTROL_MODE);
+	if(operating_mode == XL430_PWM_CONTROL_MODE) XL430_Write_Data(XL430_Handle, XL430_REG_OPERATING_MODE, XL430_PWM_CONTROL_MODE);
+}
+
+void XL430_Set_Profile_Speed(__XL430_HandleTypeDef *XL430_Handle, uint16_t profile_speed){
+	profile_speed = (profile_speed < 32767)?profile_speed:32767;
+	profile_speed = (profile_speed > 0)?profile_speed:0;
+	XL430_Write_Data(XL430_Handle, XL430_REG_PROFILE_VELOCITY, profile_speed);
+}
+
+void XL430_Set_Profile_Accel(__XL430_HandleTypeDef *XL430_Handle, uint16_t profile_accel){
+	profile_accel = (profile_accel < 32767)?profile_accel:32767;
+	profile_accel = (profile_accel > 0)?profile_accel:0;
+	XL430_Write_Data(XL430_Handle, XL430_REG_PROFILE_ACCEL, profile_accel);
+}
+
+void XL430_Led_OnOff(__XL430_HandleTypeDef *XL430_Handle, uint16_t state){
+	XL430_Write_Data(XL430_Handle, XL430_REG_LED, state);
+}
+
+void XL430_Update_CRC(__XL430_HandleTypeDef *XL430_Handle){
+	uint16_t i,j;
+	uint16_t crc_accum = 0;
+
+	for(j=0; j<XL430_Handle->tx_data_length; j++){
+		i = ((uint16_t)(crc_accum >> 8) ^ XL430_Handle->tx_buffer[j]) & 0xFF;
+		crc_accum = (crc_accum << 8) ^ crc_table[i];
+	}
+	XL430_Handle->crc = crc_accum;
+}
+
+HAL_StatusTypeDef XL430_Check_CRC(__XL430_HandleTypeDef *XL430_Handle){
+	uint16_t i,j;
+	uint16_t crc_accum = 0;
+	uint16_t crc_read = XL430_Handle->rx_buffer[XL430_Handle->rx_data_length+5] + (((uint16_t)XL430_Handle->rx_buffer[XL430_Handle->rx_data_length+6]) << 8);
+
+	for(j=0; j<XL430_Handle; j++){
+		i = ((uint16_t)(crc_accum >> 8) ^ XL430_Handle->rx_buffer[j]) & 0xFF;
+		crc_accum = (crc_accum << 8) ^ crc_table[i];
+	}
+	if(crc_accum == crc_read) return HAL_OK;
+	else return HAL_ERROR;
 }

@@ -1,0 +1,10 @@
+../Core/Src/xl430.c:53:6:XL430_Init	24	static
+../Core/Src/xl430.c:66:6:XL430_Init_debug	24	static
+../Core/Src/xl430.c:80:19:XL430_Ping	40	static
+../Core/Src/xl430.c:133:6:XL430_Set_UART_RxTxMode	24	static
+../Core/Src/xl430.c:142:6:XL430_Write_Data	16	static
+../Core/Src/xl430.c:174:6:XL430_Set_Position	16	static
+../Core/Src/xl430.c:180:6:XL430_Set_Speed	16	static
+../Core/Src/xl430.c:186:6:XL430_Set_Operating_Mode	16	static
+../Core/Src/xl430.c:193:6:XL430_Set_Profile_Speed	16	static
+../Core/Src/xl430.c:199:6:XL430_Set_Profile_Accel	16	static

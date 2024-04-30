@@ -50,7 +50,7 @@
 #define XL430_REG_GOAL_PWM              	100
 #define XL430_REG_GOAL_VELOCITY            	104
 #define XL430_REG_PROFILE_ACCEL				108
-#define XL430_REG_PROFILE_VELOCTIY			112
+#define XL430_REG_PROFILE_VELOCITY			112
 #define XL430_REG_GOAL_POS					116
 #define XL430_REG_REALTIME_TICK				120
 #define XL430_REG_MOVING                  	122
@@ -104,11 +104,11 @@
 #define XL430_LED_OFF						0
 #define XL430_LED_ON						1
 
-/////// UART RX TX Mode ///////
-#define XL430_UART_RX 						RESET
-#define XL430_UART_TX						SET
-#define XL430_CRC_LENGTH					2
+/////// XL430 RX-TX///////
+#define XL430_UART_RX							0
+#define XL430_UART_TX							1
 
+#define XL430_CRC_LENGTH					2
 #define MAX_BUFFER_LENGTH					64
 #define MAX_BUFFER_DEBUG_LENGTH				256
 
@@ -116,8 +116,6 @@ typedef struct __XL320_HandleTypeDef
 {											// Default	Min 	Max
 	UART_HandleTypeDef *huart;
 	UART_HandleTypeDef *huart_debug;
-	GPIO_TypeDef *tx_En_Port;
-	uint16_t tx_En_Pin;
 	uint16_t model_number;					// 1060
 	uint32_t model_information;				// -
 	uint8_t firmware_version;				// -
@@ -181,15 +179,17 @@ typedef struct __XL320_HandleTypeDef
 
 extern __XL430_HandleTypeDef hxl430;
 
-void XL430_Init(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, GPIO_TypeDef *TxEnPort, uint16_t TxEnPin, uint8_t id, uint8_t  baudrate);
-void XL430_Init_Debug(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, UART_HandleTYpeDef *huart_debug, GPIO_TypeDef *TxEnPort, uint16_t TxEnPin, uint8_t id, uint8_t baudrate);
+void XL430_Init(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, uint8_t id, uint8_t baudrate);
+void XL430_Init_Debug(__XL430_HandleTypeDef *XL430_Handle, UART_HandleTypeDef *huart, UART_HandleTypeDef *huart_debug, uint8_t id, uint8_t baudrate);
 HAL_StatusTypeDef XL430_Ping(__XL430_HandleTypeDef *XL430_Handle);
-void XL430_Set_UART_RxTxMode(__XL430_HandleTYpeDef *XL430_Handle, GPIO_PinState mode);
-void XL430_Write_Data(__XL430_HandleTypeDef *XL430_Handle, uint16_t Adress, uint16_t Value);
+void XL430_Set_UART_RxTxMode(__XL430_HandleTypeDef *XL430_Handle, int mode);
+void XL430_Write_Data(__XL430_HandleTypeDef *XL430_Handle, uint16_t Address, uint16_t Value);
 //void XL430_ReadData(__XL430_HandleTypeDef *XL430_Handle);
 void XL430_Set_Position(__XL430_HandleTypeDef *XL430_Handle, uint16_t position);
 void XL430_Set_Speed(__XL430_HandleTypeDef *XL430_Handle, uint16_t speed);
 void XL430_Set_Operating_Mode(__XL430_HandleTypeDef *XL430_Handle, uint16_t operating_mode);
+void XL430_Set_Profile_Speed(__XL430_HandleTypeDef *XL430_Handle, uint16_t profile_speed);
+void XL430_Set_Profile_Accel(__XL430_HandleTypeDef *XL430_Handle, uint16_t profile_accel);
 void XL430_Led_OnOff(__XL430_HandleTypeDef *XL430_Handle, uint16_t state);
 //void XL430_Set_ID(__XL430_HandleTypeDef *XL430_Handle, uint8_t ID);
 //void XL430_Set_Baudrate(__XL430_HandleTypeDef *XL430_Handle, uint8_t baudrate);
