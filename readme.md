@@ -9,14 +9,14 @@ capable d'ouvrir et de rabattre ses ailes, d'ouvrir et de fermer ses paupières,
 l'appui de différents boutons.
 <!--
 <div style="display: flex;">
-  <img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" style="flex: 50%;">
-  <img src="GestionProjet/diagramme d'architecture animatronic.pdf" alt="diagramme d'architecture animatronic.pdf" style="flex: 50%;">
+  <img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" style="flex: 30%;">
+  <img src="GestionProjet/Diagramme_architecture.drawio.png" alt="diagramme d'architecture" style="flex: 70%;">
 </div>
 -->
 <table>
   <tr>
-    <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="300" height="500"></td>
-    <td><img src="image2.jpg" alt="Image 2"></td>
+    <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="500" height="700"></td>
+    <td><img src="GestionProjet/Diagramme_architecture.drawio.png" alt="Diagramme d'architecture" width="500" height="700"></td>
   </tr>
 </table>
 
