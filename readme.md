@@ -7,22 +7,16 @@ Elles sont depuis plusieurs décennies et encore aujourd'hui principalement util
 Dans le cadre d'un projet de 1ère année à l'école d'ingénieur ENSEA supervisé par (@)M.Papazoglou nous allons créer créer une animatronique d'aigle en 10 séances de 4h. Cet animatronic sera
 capable d'ouvrir et de rabattre ses ailes, d'ouvrir et de fermer ses paupières, d'ouvrir et de fermer son bec, de pivoter sa tête (optionnel). Ces mouvements seront commandés par
 l'appui de différents boutons.
-<!--
-<div style="display: flex;">
-  <img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" style="flex: 50%;">
-  <img src="GestionProjet/diagramme d'architecture animatronic.pdf" alt="diagramme d'architecture animatronic.pdf" style="flex: 50%;">
-</div>
--->
+
 <table>
   <tr>
-    <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="300" height="500"></td>
-    <td><img src="image2.jpg" alt="Image 2"></td>
+    <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="500" height="700"></td>
+    <td><img src="GestionProjet/Diagramme_architecture.drawio.png" alt="Diagramme d'architecture" width="500" height="700"></td>
   </tr>
 </table>
 
-<!-- ![Cahier des charges](GestionProjet/Cahier_des_charges.png) --> 
 # Equipe
-Membre de l'équipe : 
+Membres de l'équipe : 
 * Vincent Fernandes
     * [Github](https://github.com/FernandesVincent)
     * [Linkedin](https://www.linkedin.com/in/vincent-fernandes-0981552a6/)
@@ -86,6 +80,42 @@ Membre de l'équipe :
 # Livrables
 ## PCB
 > Présentation du schéma (grandes lignes) + PCB
+
+Ci-dessous les schematic et PCB editor des 3 PCB nécessaires à la réalisation du DEA:
+
+#### Corps
+
+Ce PCB est le PCB principal contenant le microprocesseur ainsi que les connecteurs et les bouttons utiles à l'utilisateur.
+
+<table>
+  <tr>
+    <td><img src="Hardware/PCB/screenshots/schematic corps.png" alt="schematic corps" width="600" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB_editor_corps.png" alt="PCB editor corps" width="500" height="500"></td>
+  </tr>
+</table>
+
+#### Tête
+
+Ce PCB sert à réguler les tension envoyés aux moteurs et contient également le LED driver qui permet de commander les LED présentes sur le [PCB des yeux](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#yeux).
+
+<table>
+  <tr>
+    <td><img src="Hardware/PCB/screenshots/schematic tête.png" alt="schematic tête" width="600" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB editor tête.png" alt="PCB editor tête" width="500" height="500"></td>
+  </tr>
+</table>
+
+#### Yeux
+
+Ce PCB, utilisé deux fois dans le DEA (un pour chaque oeil) à pour unique utilité de placer les LED au plus proche des yeux grâce à un connecteur qui le relie au [PCB de la tête](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#t%C3%AAte).
+
+<table>
+  <tr>
+    <td><img src="Hardware/PCB/screenshots/schematic eye.png" alt="schematic oeil" width="600" height="250"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB editor eye.png" alt="PCB editor oeil" width="500" height="250"></td>
+  </tr>
+</table>
+
 
 ## Code
 > Architecture de votre code
