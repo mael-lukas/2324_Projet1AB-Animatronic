@@ -17,19 +17,19 @@ l'appui de différents boutons.
 
 # Equipe
 Membres de l'équipe : 
-* Vincent Fernandes
+* #### Vincent Fernandes
     * [Github](https://github.com/FernandesVincent)
     * [Linkedin](https://www.linkedin.com/in/vincent-fernandes-0981552a6/)
-* Maël Lukas
+* #### Maël Lukas
     * [Github](https://github.com/mael-lukas)
     * [Linkedin](https://www.linkedin.com/in/mael-lukas/)
-* Romane Ponthieu
+* ##### Romane Ponthieu
     * [Github](https://github.com/Romanepnth)
     * [Linkedin](https://www.linkedin.com/in/romane-ponthieu/)
-* Marie Ceccaldi
+* #### Marie Ceccaldi
     * [Github](https://github.com/mariececcaldi1)
     * [Linkedin](https://www.linkedin.com/in/marie-ceccaldi-887616300/)
-* Sedrenn Labrousse
+* #### Sedrenn Labrousse
     * [Github](https://github.com/Sedrennl)
     * [Linkedin](https://www.linkedin.com/in/sédrenn-labrousse-24b2a5295/)
 > Rajouter les liens vers vos linked in, github, etc...
