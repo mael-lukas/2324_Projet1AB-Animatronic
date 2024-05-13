@@ -40,13 +40,13 @@ Membres de l'équipe :
 ## Séance 1
    Cette séance, étant la première, nous a servit à définir notre projet au travers de la création d'une première version d'un cahier des charges et d'un diagramme d'architecture. Afin de nous organiser au mieux au vu du temps disponible à la création de ce projet nous nous sommes directement répartit différentes tâches à réaliser durant les semaines qui suivent.
    * #### modélisation 3D de l'aigle
-        * Sedrenn Labrousse
+        * [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse)
    * #### programmation des moteurs
-        *  Maël Lukas
+        * [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas)
    * #### création des différents PCB
-        * Romane Ponthieu
-        * Marie Ceccaldi
-        * Vincent Fernandes
+        * [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu)
+        * [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi)
+        * [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes)
 
 ## Séance 2
    Durant cette séance nous avons affiné notre cahier des charges et notre diagramme d'architecture disponible ci-dessous:
