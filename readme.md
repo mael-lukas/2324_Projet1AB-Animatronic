@@ -81,6 +81,42 @@ Membres de l'équipe :
 ## PCB
 > Présentation du schéma (grandes lignes) + PCB
 
+Ci-dessous les schematic et PCB editor des 3 PCB nécessaires à la réalisation du DEA:
+
+#### Corps
+
+Ce PCB est le PCB principal contenant le microprocesseur ainsi que les connecteurs et les bouttons utiles à l'utilisateur.
+
+<table>
+  <tr>
+    <td><img src="Hardware/PCB/screenshots/schematic corps.png" alt="schematic corps" width="600" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB_editor_corps.png" alt="PCB editor corps" width="500" height="500"></td>
+  </tr>
+</table>
+
+#### Tête
+
+Ce PCB sert à réguler les tension envoyés aux moteurs et contient également le LED driver qui permet de commander les LED présentes sur le [PCB des yeux](hhttps://github.com/mael-lukas/2324_Projet1AB_Animatronic/edit/main/readme.md#yeux).
+
+<table>
+  <tr>
+    <td><img src="Hardware/PCB/screenshots/schematic tête.png" alt="schematic tête" width="600" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB editor tête.png" alt="PCB editor tête" width="500" height="500"></td>
+  </tr>
+</table>
+
+#### Yeux
+
+Ce PCB, utilisé deux fois dans le DEA (un pour chaque oeil) à pour unique utilité de placer les LED au plus proche des yeux grâce à un connecteur qui le relie au [PCB de la tête](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/edit/main/readme.md#t%C3%AAte).
+
+<table>
+  <tr>
+    <td><img src="Hardware/PCB/screenshots/schematic eye.png" alt="schematic oeil" width="600" height="250"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB editor eye.png" alt="PCB editor oeil" width="500" height="250"></td>
+  </tr>
+</table>
+
+
 ## Code
 > Architecture de votre code
 
