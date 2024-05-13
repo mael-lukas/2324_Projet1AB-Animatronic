@@ -89,8 +89,8 @@ Ce PCB est le PCB principal contenant le microprocesseur ainsi que les connecteu
 
 <table>
   <tr>
-    <td><img src="Hardware/PCB/screenshots/schematic corps.png" alt="schematic corps" width="600" height="500"></td>
-    <td><img src="Hardware/PCB/screenshots/PCB_editor_corps.png" alt="PCB editor corps" width="500" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/schematic corps.png" alt="schematic corps" width="600" height="400"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB_editor_corps.png" alt="PCB editor corps" width="500" height="400"></td>
   </tr>
 </table>
 
