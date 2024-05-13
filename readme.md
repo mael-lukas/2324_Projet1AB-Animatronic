@@ -15,7 +15,8 @@ l'appui de différents boutons.
   </tr>
 </table>
 
-  [Cahier des charges](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Cahier_des_charges.png)    [Diagramme d'architecture](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Diagramme_architecture.drawio.png)
+  [Cahier des charges](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Cahier_des_charges.png)    
+  [Diagramme d'architecture](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Diagramme_architecture.drawio.png)
 
 # Equipe
 Membres de l'équipe : 
@@ -110,7 +111,7 @@ Ce PCB est le PCB principal contenant le microprocesseur ainsi que les connecteu
   </tr>
 </table>
 
-[schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20corps.png)
+[Schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20corps.png)         
 [PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB_editor_corps.png)
 
 #### Tête
@@ -124,7 +125,7 @@ Ce PCB sert à réguler les tension envoyés aux moteurs et contient également 
   </tr>
 </table>
 
-[schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20t%C3%AAte.png)
+[Schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20t%C3%AAte.png)   
 [PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB%20editor%20t%C3%AAte.png)
 
 #### Yeux
@@ -138,7 +139,7 @@ Ce PCB, utilisé deux fois dans le DEA (un pour chaque oeil) à pour unique util
   </tr>
 </table>
 
-[schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20eye.png)
+[Schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20eye.png)        
 [PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB%20editor%20eye.png)
 
 ## Code
