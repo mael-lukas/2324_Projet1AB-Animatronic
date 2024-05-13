@@ -83,7 +83,11 @@ Membres de l'équipe :
    Mael == vidéo moteur
    
 ## Séance 7
-   Durant cette séance, [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) ont crées le modèle 3D d'un cache pour l'alimentation, tandis que [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) a imprimée une première version de la tête de l'aigle. [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes), pour sa part, a entammé la rédaction du fichier readme.md en markdown et en HTML.
+   Durant cette séance, [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) ont crées le modèle 3D d'un cache pour l'alimentation: 
+   
+   ![cache](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/cache.jpg)
+   
+   Pendant ce temps [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) a imprimée une première version de la tête de l'aigle. [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes), pour sa part, a entammé la rédaction du fichier readme.md en markdown et en HTML.
    Création d'un modèle 3D d'un cache pour l'alimentation
    Impression d'une première version de la tête
    
