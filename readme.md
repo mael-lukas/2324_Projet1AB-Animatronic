@@ -100,8 +100,8 @@ Ce PCB sert à réguler les tension envoyés aux moteurs et contient également 
 
 <table>
   <tr>
-    <td><img src="Hardware/PCB/screenshots/schematic tête.png" alt="schematic tête" width="600" height="300"></td>
-    <td><img src="Hardware/PCB/screenshots/PCB editor tête.png" alt="PCB editor tête" width="500" height="300"></td>
+    <td><img src="Hardware/PCB/screenshots/schematic tête.png" alt="schematic tête" width="600" height="400"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB editor tête.png" alt="PCB editor tête" width="500" height="400"></td>
   </tr>
 </table>
 
