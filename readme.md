@@ -55,24 +55,32 @@ Membres de l'équipe :
    Pendant ce temps, Sedrenn et Maël se sont chargés de la commande des différents composants dont nous ne disposions pas à l'école.
    
 ## Séance 3
+   À cette étape du projet nous avons choisis de créer un nouveau [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#yeux) dans le but de pouvoir placer les LED RGB au plus proches des yeux de d'aigle. Ce PCB sera donc utilisé deux fois, un pour chaque oeil.
+   En parallèle à cela, nous nous sommes penchés sur la réalisation d'un socle dont le but est d'accueillir le [PCB principal](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#t%C3%AAte) ainsi que l'alimentation tout en permettant de poser l'aigle sur celui-ci pour y connecter l'ensemble des câbles.
+   
    Détermination du besoin d'un nouveau PCB pour pouvoir palcer des LED RGB au niveau des yeux de l'aigle.
    Détermination d'un socle 
    
 ## Séance 4
-   Cette séance a permis la finalisation des schematic des 2 PCB crées sous Kicad et ainsi le passage à l'étape PCB editor pour les membres affectés à cette partie du projet.
-
+   Cette séance a permis la finalisation des schematic des 3 [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#pcb) crées sous Kicad et ainsi le passage à l'étape PCB editor pour les membres affectés à cette partie du projet.
+  Mael == code petits moteurs
+  Sedreen == modèle 3D
 ## Séance 5
-   Au cours de ces 4 heures M.Papazoglou a pu vérifier les 3 PCB et nous faire des retours pour que l'on puisse faire les dernières retouches pour ensuite pouvoir passer la commande.
+   Au cours de ces 4 heures M.Papazoglou a pu vérifier les 3 [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#pcb) et nous faire des retours pour que l'on puisse faire les dernières retouches pour ensuite pouvoir passer la commande.
    
    À ce moment là dans l'avancée du projet, toutes les réalisations énoncées à la séance 1 ont pu avancer comme il ce doit. Les pcb étaient en phase de finalisation, la programmation des moteurs a permis la commande d'un petit moteur tandis que les moteurs XL430 voyaient leur fichiers header être terminés. Finalement, la modélisation 3D...
 
 ## Séance 6
-   Au cours de cette séance nous avons reçu les commandes de composants faites durant la séance 2 ainsi que les PCB qui ont donc pu être soudés durant ces 4 heures.
-   Premier prototype de socle.
+   Au cours de cette séance nous avons reçu les commandes de composants faites durant la séance 2 ainsi que les PCB qui ont donc pu être soudés par Marie et Romane durant ces 4 heures.
+   Sedrenn trou dans la tête
+   Mael == vidéo moteur
+   Vincent Premier prototype de socle.
 ## Séance 7
-
+   Création d'un modèle 3D d'un cache pour l'alimentation
+   Impression d'une première version de la tête
 ## Séance 8
-   Présentation orale (10min par groupe + 10min de question, total 1h max)
+   Impression 3D d'un cache pour l'alimentation.
+   Mise au propre de l'Architecture du code.
 ## Séance 9
 
 ## Séance 10
