@@ -16,7 +16,7 @@ l'appui de différents boutons.
 </table>
 
 # Equipe
-Membre de l'équipe : 
+Membres de l'équipe : 
 * Vincent Fernandes
     * [Github](https://github.com/FernandesVincent)
     * [Linkedin](https://www.linkedin.com/in/vincent-fernandes-0981552a6/)
