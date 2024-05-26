@@ -112,7 +112,7 @@
 #define MAX_BUFFER_LENGTH					64
 #define MAX_BUFFER_DEBUG_LENGTH				256
 
-typedef struct __XL320_HandleTypeDef
+typedef struct __XL430_HandleTypeDef
 {											// Default	Min 	Max
 	UART_HandleTypeDef *huart;
 	UART_HandleTypeDef *huart_debug;

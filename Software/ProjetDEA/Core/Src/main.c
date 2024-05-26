@@ -18,6 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
+#include <stm32l4xx_hal.h>
+#include "servo.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -130,7 +133,15 @@ int main(void)
   MX_I2C3_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  __XL430_HandleTypeDef XL430_1;
+
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
+
+  /*__XL430_HandleTypeDef XL430_1;
 
   XL430_Init(&XL430_1, &huart2, 1, 1);
   XL430_Init_debug(&XL430_1, &huart2, &huart1, 1, 1);
@@ -138,13 +149,39 @@ int main(void)
   XL430_Write_Data(&XL430_1,XL430_REG_TORQUE_ENABLE,0);
   XL430_Set_Operating_Mode(&XL430_1,XL430_VELOCITY_CONTROL_MODE);
   XL430_Set_Speed(&XL430_1,200);
-  XL430_Write_Data(&XL430_1,XL430_REG_TORQUE_ENABLE,1);
+  XL430_Write_Data(&XL430_1,XL430_REG_TORQUE_ENABLE,1);*/
+
+  __Servo_HandleTypeDef Servo_1;
+  __Servo_HandleTypeDef Servo_2;
+  __Servo_HandleTypeDef Servo_3;
+
   /* USER CODE END 2 */
+
+  servoInit(&Servo_1, GPIOB, BTN_1_Pin, &htim1, TIM_CHANNEL_4);
+  servoInit(&Servo_2, GPIOB, BTN_2_Pin, &htim1, TIM_CHANNEL_3);
+  servoInit(&Servo_3, GPIOA, BTN_3_Pin, &htim1, TIM_CHANNEL_2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if(btnPressed() != 0){
+		  int a = btnPressed();
+		  switch(a){
+		  	  case 1:
+		  		  turnServo(&Servo_1);
+		  		  break;
+		  	  case 2:
+		  		  turnServo(&Servo_2);
+		  		  break;
+		  	  case 3:
+		  		  turnServo(&Servo_3);
+		  		  break;
+		  	  default:
+		  }
+	  }
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -490,17 +527,17 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LED2_Pin|LED3_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : BTN_6_Pin BTN_5_Pin BTN_4_Pin BTN_3_Pin
-                           BTN_7_Pin */
-  GPIO_InitStruct.Pin = BTN_6_Pin|BTN_5_Pin|BTN_4_Pin|BTN_3_Pin
-                          |BTN_7_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  /*Configure GPIO pins : BTN_5_Pin BTN_6_M_Pin BTN_4_Pin BTN_3_Pin
+                           BTN_7_M_Pin */
+  GPIO_InitStruct.Pin = BTN_5_Pin|BTN_6_M_Pin|BTN_4_Pin|BTN_3_Pin
+                          |BTN_7_M_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : BTN_2_Pin BTN_1_Pin */
   GPIO_InitStruct.Pin = BTN_2_Pin|BTN_1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
