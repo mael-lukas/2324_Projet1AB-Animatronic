@@ -10,7 +10,7 @@ l'appui de différents boutons.
 
 <table>
   <tr>
-    <td><img src="GestionProjet/Cahier_des_charges.png" alt="Cahier des charges" width="500" height="700"></td>
+    <td><img src="GestionProjet/Cahier des charges (1).png" alt="Cahier des charges" width="500" height="700"></td>
     <td><img src="GestionProjet/Diagramme_architecture.drawio.png" alt="Diagramme d'architecture" width="500" height="700"></td>
   </tr>
 </table>
