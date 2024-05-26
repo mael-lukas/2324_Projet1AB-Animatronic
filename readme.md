@@ -15,21 +15,24 @@ l'appui de différents boutons.
   </tr>
 </table>
 
+  [Cahier des charges](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Cahier_des_charges.png)    
+  [Diagramme d'architecture](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Diagramme_architecture.drawio.png)
+
 # Equipe
 Membres de l'équipe : 
-* Vincent Fernandes
+* #### Vincent Fernandes
     * [Github](https://github.com/FernandesVincent)
     * [Linkedin](https://www.linkedin.com/in/vincent-fernandes-0981552a6/)
-* Maël Lukas
+* #### Maël Lukas
     * [Github](https://github.com/mael-lukas)
     * [Linkedin](https://www.linkedin.com/in/mael-lukas/)
-* Romane Ponthieu
+* ##### Romane Ponthieu
     * [Github](https://github.com/Romanepnth)
     * [Linkedin](https://www.linkedin.com/in/romane-ponthieu/)
-* Marie Ceccaldi
+* #### Marie Ceccaldi
     * [Github](https://github.com/mariececcaldi1)
     * [Linkedin](https://www.linkedin.com/in/marie-ceccaldi-887616300/)
-* Sedrenn Labrousse
+* #### Sedrenn Labrousse
     * [Github](https://github.com/Sedrennl)
     * [Linkedin](https://www.linkedin.com/in/sédrenn-labrousse-24b2a5295/)
 > Rajouter les liens vers vos linked in, github, etc...
@@ -40,43 +43,64 @@ Membres de l'équipe :
 ## Séance 1
    Cette séance, étant la première, nous a servit à définir notre projet au travers de la création d'une première version d'un cahier des charges et d'un diagramme d'architecture. Afin de nous organiser au mieux au vu du temps disponible à la création de ce projet nous nous sommes directement répartit différentes tâches à réaliser durant les semaines qui suivent.
    * #### modélisation 3D de l'aigle
-        * Sedrenn Labrousse
+        * [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse)
    * #### programmation des moteurs
-        *  Maël Lukas
+        * [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas)
    * #### création des différents PCB
-        * Romane Ponthieu
-        * Marie Ceccaldi
-        * Vincent Fernandes
+        * [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu)
+        * [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi)
+        * [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes)
 
 ## Séance 2
    Durant cette séance nous avons affiné notre cahier des charges et notre diagramme d'architecture disponible ci-dessous:
 
    Nous en avons déduis la nécessité d'avoir un minimum de 2 PCB afin de réaliser notre animatronique, le principal qui contiendrait le microprocesseur ainsi que différents connectiques tandis que le secondaire incorporerai principalement en son sein tout les régulateurs de tension nécessaire à l'actionnment des moteurs. [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#pcb)
-   Pendant ce temps, Sedrenn et Maël se sont chargés de la commande des différents composants dont nous ne disposions pas à l'école.
+   Pendant ce temps, [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) et [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas)
+ se sont chargés de la commande des différents composants dont nous ne disposions pas à l'école.
    
 ## Séance 3
-   Détermination du besoin d'un nouveau PCB pour pouvoir palcer des LED RGB au niveau des yeux de l'aigle.
-   Détermination d'un socle 
+   À cette étape du projet nous avons choisis de créer un nouveau [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#yeux) dans le but de pouvoir placer les LED RGB au plus proches des yeux de d'aigle. Ce PCB sera donc utilisé deux fois, un pour chaque oeil.
+   En parallèle à cela, nous nous sommes penchés sur la réalisation d'un socle dont le but est d'accueillir le [PCB principal](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#corps) ainsi que l'alimentation tout en permettant de poser l'aigle sur celui-ci pour y connecter l'ensemble des câbles.
    
 ## Séance 4
-   Cette séance a permis la finalisation des schematic des 2 PCB crées sous Kicad et ainsi le passage à l'étape PCB editor pour les membres affectés à cette partie du projet.
+   Cette séance a permis la finalisation des schematic des 3 [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#pcb) crées sous Kicad et ainsi le passage à l'étape PCB editor pour les membres affectés à cette partie du projet.
+   Pendant ce temps [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas) a finalisé une première version du code des petits moteurs et [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) a trouvé le modèle 3D d'un aigle qui servira de base pour notre projet.
 
+![Modèle 3D](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Etude%20oiseau%20/Modele_3D.gif)
+   
 ## Séance 5
-   Au cours de ces 4 heures M.Papazoglou a pu vérifier les 3 PCB et nous faire des retours pour que l'on puisse faire les dernières retouches pour ensuite pouvoir passer la commande.
+   Au cours de ces 4 heures M.Papazoglou a pu vérifier les 3 [PCB](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#pcb) et nous faire des retours pour que l'on puisse faire les dernières retouches pour ensuite pouvoir passer la commande.
    
    À ce moment là dans l'avancée du projet, toutes les réalisations énoncées à la séance 1 ont pu avancer comme il ce doit. Les pcb étaient en phase de finalisation, la programmation des moteurs a permis la commande d'un petit moteur tandis que les moteurs XL430 voyaient leur fichiers header être terminés. Finalement, la modélisation 3D...
 
 ## Séance 6
-   Au cours de cette séance nous avons reçu les commandes de composants faites durant la séance 2 ainsi que les PCB qui ont donc pu être soudés durant ces 4 heures.
-   Premier prototype de socle.
+   Au cours de cette séance nous avons reçu les commandes de composants faites durant la séance 2 ainsi que les PCB qui ont donc pu être soudés par [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) durant ces 4 heures.
+   En parralèle à cela, [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) a finalisée la première version de la tête de l'aigle en y incluant les moteurs et PCB associés:
+   
+![Modèle 3D finalisé](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Etude%20oiseau%20/Modele_3D_explose.gif)
+   
+   [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes), quant à lui, à réalisé un premier prototype du socle réfléchit à la [Séance 3](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#s%C3%A9ance-3)
+   Mael == vidéo moteur
+   
 ## Séance 7
-
+   Durant cette séance, [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) ont crées le modèle 3D d'un cache pour l'alimentation: 
+   
+   ![cache](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/cache.jpg)
+   
+   Pendant ce temps [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) a imprimée une première version de la tête de l'aigle. [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes), pour sa part, a entammé la rédaction du fichier readme.md en markdown et en HTML.
+   Création d'un modèle 3D d'un cache pour l'alimentation
+   Impression d'une première version de la tête
+   
 ## Séance 8
-   Présentation orale (10min par groupe + 10min de question, total 1h max)
+   Au cours de cette séance, [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) ont finalisées le modèle 3D du cache entammé à la séance précédente, puis l'ont imprimé. Au même moment [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas) a mis au propre [l'architecture du code](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#code)
+   Impression 3D d'un cache pour l'alimentation.
+   Mise au propre de l'Architecture du code.
+   
 ## Séance 9
 
 ## Séance 10
    Démonstration, bilan, rapport
+   
 # Livrables
 ## PCB
 > Présentation du schéma (grandes lignes) + PCB
@@ -89,10 +113,13 @@ Ce PCB est le PCB principal contenant le microprocesseur ainsi que les connecteu
 
 <table>
   <tr>
-    <td><img src="Hardware/PCB/screenshots/schematic corps.png" alt="schematic corps" width="600" height="500"></td>
-    <td><img src="Hardware/PCB/screenshots/PCB_editor_corps.png" alt="PCB editor corps" width="500" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/schematic corps.png" alt="schematic corps" width="600" height="400"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB_editor_corps.png" alt="PCB editor corps" width="500" height="400"></td>
   </tr>
 </table>
+
+[Schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20corps.png)         
+[PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB_editor_corps.png)
 
 #### Tête
 
@@ -100,10 +127,13 @@ Ce PCB sert à réguler les tension envoyés aux moteurs et contient également 
 
 <table>
   <tr>
-    <td><img src="Hardware/PCB/screenshots/schematic tête.png" alt="schematic tête" width="600" height="500"></td>
-    <td><img src="Hardware/PCB/screenshots/PCB editor tête.png" alt="PCB editor tête" width="500" height="500"></td>
+    <td><img src="Hardware/PCB/screenshots/schematic tête.png" alt="schematic tête" width="600" height="400"></td>
+    <td><img src="Hardware/PCB/screenshots/PCB editor tête.png" alt="PCB editor tête" width="500" height="400"></td>
   </tr>
 </table>
+
+[Schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20t%C3%AAte.png)   
+[PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB%20editor%20t%C3%AAte.png)
 
 #### Yeux
 
@@ -116,6 +146,8 @@ Ce PCB, utilisé deux fois dans le DEA (un pour chaque oeil) à pour unique util
   </tr>
 </table>
 
+[Schematic](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/schematic%20eye.png)        
+[PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB%20editor%20eye.png)
 
 ## Code
 > Architecture de votre code
