@@ -97,7 +97,9 @@ Membres de l'équipe :
    Mise au propre de l'Architecture du code.
    
 ## Séance 9
+  Durant cette séance nous avons réalisé une première présentation orale du projet DEA. De plus, nous avons eu l'impression 3D du cache de l'alimentation ainsi qu'une seconde version de l'impression de la tête de l'aigle, toutes deux présentées ci-dessous:
 
+  
 ## Séance 10
    Démonstration, bilan, rapport
    
