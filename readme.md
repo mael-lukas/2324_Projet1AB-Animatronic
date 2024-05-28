@@ -15,7 +15,7 @@ l'appui de différents boutons.
   </tr>
 </table>
 
-  [Cahier des charges](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Cahier_des_charges.png)    
+  [Cahier des charges](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Cahier%20des%20charges%20(1).png)    
   [Diagramme d'architecture](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Diagramme_architecture.drawio.png)
 
 # Equipe
@@ -88,13 +88,13 @@ Membres de l'équipe :
    ![cache](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/cache.jpg)
    
    Pendant ce temps [Sedrenn](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#sedrenn-labrousse) a imprimée une première version de la tête de l'aigle. [Vincent](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#vincent-fernandes), pour sa part, a entammé la rédaction du fichier readme.md en markdown et en HTML.
-   Création d'un modèle 3D d'un cache pour l'alimentation
-   Impression d'une première version de la tête
    
 ## Séance 8
-   Au cours de cette séance, [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) ont finalisées le modèle 3D du cache entammé à la séance précédente, puis l'ont imprimé. Au même moment [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas) a mis au propre [l'architecture du code](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#code)
-   Impression 3D d'un cache pour l'alimentation.
-   Mise au propre de l'Architecture du code.
+   Au cours de cette séance, [Marie](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#marie-ceccaldi) et [Romane](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#romane-ponthieu) ont finalisées le modèle 3D du cache entammé à la séance précédente, puis l'ont [imprimé](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/picture%20cache.jpg). Au même moment [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#ma%C3%ABl-lukas) a mis au propre [l'architecture du code](https://github.com/mael-lukas/2324_Projet1AB_Animatronic?tab=readme-ov-file#code)
+
+![cache](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/picture%20cache.jpg)
+
+
    
 ## Séance 9
   Durant cette séance nous avons réalisé une première présentation orale du projet DEA. De plus, nous avons eu l'impression 3D du cache de l'alimentation ainsi qu'une seconde version de l'impression de la tête de l'aigle, toutes deux présentées ci-dessous:
