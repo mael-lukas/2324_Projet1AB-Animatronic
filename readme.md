@@ -1,10 +1,9 @@
 # DEA : Dynamic Eagle Animatronic
-> Présentation du projet, cahier des charges, état de l'art, etc...
 
 Depuis la Grêce antique et le mythe du géant de bronze Talos les hommes ont toujours cherchés à créer des automates avec les moyens à leur disposition. Les animatroniques sont l'achèvement actuel de ce désir. Ce sont des poupées mécaniques plus ou moins réalistes dont le fonctionnement interne fait intervenir autant de la mécanique que de l'électronique.
 Elles sont depuis plusieurs décennies et encore aujourd'hui principalement utilisées dans le domaine du divertissement au travers des parcs d'attraction, des films et des séries.
 
-Dans le cadre d'un projet de 1ère année à l'école d'ingénieur ENSEA supervisé par (@)M.Papazoglou nous allons créer créer une animatronique d'aigle en 10 séances de 4h. Cet animatronic sera
+Dans le cadre d'un projet de 1ère année à l'école d'ingénieur ENSEA supervisé par [M.Papazoglou] nous allons créer créer une animatronique d'aigle en 10 séances de 4h. Cet animatronic sera
 capable d'ouvrir et de rabattre ses ailes, d'ouvrir et de fermer ses paupières, d'ouvrir et de fermer son bec, de pivoter sa tête (optionnel). Ces mouvements seront commandés par
 l'appui de différents boutons.
 
@@ -35,10 +34,13 @@ Membres de l'équipe :
 * #### Sedrenn Labrousse
     * [Github](https://github.com/Sedrennl)
     * [Linkedin](https://www.linkedin.com/in/sédrenn-labrousse-24b2a5295/)
-> Rajouter les liens vers vos linked in, github, etc...
+
+* #### Supervisée par M.Papazoglou
+    * [Github]
+    * [Linkedin]
+
 
 # Journal de bord
-> Déroulé séance par séance
 
 ## Séance 1
    Cette séance, étant la première, nous a servit à définir notre projet au travers de la création d'une première version d'un cahier des charges et d'un diagramme d'architecture. Afin de nous organiser au mieux au vu du temps disponible à la création de ce projet nous nous sommes directement répartit différentes tâches à réaliser durant les semaines qui suivent.
@@ -106,7 +108,6 @@ Au même moment [Maël](https://github.com/mael-lukas/2324_Projet1AB_Animatronic
 </table>
   
 ## Séance 10
-   Démonstration, bilan, rapport
    
    Au cours de cette dernière séance, nous avons assemblé la tête de l'aigle avec les différents PCB crée au cours des séance précédentes afin de permettre une ouverture et une fermeture du bec ainsi que le mouvement des paupières, ce que nous avons réussi comme en témoigne [la vidéo de démonstration du projet](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#rendu-final).
 
@@ -121,9 +122,6 @@ Ces idées ne sont encore que des réflexions et seront amennées a évoluées a
    
 # Livrables
 ## PCB
-> Présentation du schéma (grandes lignes) + PCB
-
-Ci-dessous les schematic et PCB editor des 3 PCB nécessaires à la réalisation du DEA:
 
 #### Corps
 
@@ -168,15 +166,15 @@ Ce PCB, utilisé deux fois dans le DEA (un pour chaque oeil) à pour unique util
 [PCB editor](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Hardware/PCB/screenshots/PCB%20editor%20eye.png)
 
 ## Code
-> Architecture de votre code
 
 ![code](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/architecture%20du%20code.png)
 
 
 ## Rendu final
-> Video ici de votre projet
 
-![video]()
+![video](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Etude%20oiseau%20/Modelisation3D/final.gif)
+
+[video en meilleure qualité (à télécharger)](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/Etude%20oiseau%20/Modelisation3D/vid.mp4)
 
 
 
