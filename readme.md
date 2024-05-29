@@ -154,6 +154,9 @@ Ce PCB, utilisé deux fois dans le DEA (un pour chaque oeil) à pour unique util
 ## Code
 > Architecture de votre code
 
+![code](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/architecture%20du%20code.png)
+
+
 ## Rendu final
 > Video ici de votre projet
 
