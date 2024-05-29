@@ -35,7 +35,7 @@ Membres de l'équipe :
     * [Github](https://github.com/Sedrennl)
     * [Linkedin](https://www.linkedin.com/in/sédrenn-labrousse-24b2a5295/)
 
-* #### Supervisé par M.Papazoglou
+* #### Supervisé par Nicolas Papazoglou
     * [Github](https://github.com/DBXYD?tab=overview&from=2024-05-01&to=2024-05-29)
     * [Linkedin](https://www.linkedin.com/in/nicolas-papazoglou-38382646/?originalSubdomain=fr)
 
