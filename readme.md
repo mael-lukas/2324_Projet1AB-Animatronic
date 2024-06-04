@@ -139,7 +139,7 @@ Ce PCB est le PCB principal contenant le microprocesseur ainsi que les connecteu
 
 #### Tête
 
-Ce PCB sert à réguler les tension envoyés aux moteurs et contient également le LED driver qui permet de commander les LED présentes sur le [PCB des yeux](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#yeux).
+Ce PCB sert à réguler les tensions envoyées aux moteurs et contient également le LED driver qui permet de commander les LED présentes sur le [PCB des yeux](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/tree/main?tab=readme-ov-file#yeux).
 
 <table>
   <tr>
