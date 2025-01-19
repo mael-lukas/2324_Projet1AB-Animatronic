@@ -15,7 +15,7 @@ l'appui de différents boutons.
 </table>
 
   [](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Cahier%20des%20charges%20(1).png)    
-  [Diagramme d'architecture](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Diagramme_architecture.drawio.png)
+  [](https://github.com/mael-lukas/2324_Projet1AB_Animatronic/blob/main/GestionProjet/Diagramme_architecture.drawio.png)
 
 # Equipe
 Membres de l'équipe : 
